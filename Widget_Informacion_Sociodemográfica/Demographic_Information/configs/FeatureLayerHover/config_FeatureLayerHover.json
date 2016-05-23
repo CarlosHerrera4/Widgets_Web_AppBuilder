@@ -5,8 +5,8 @@
       "app_id": "http://sampleserver6.arcgisonline.com/arcgis/rest/services/SampleWorldCities/MapServer/1",
       "count": 2,
       "tablefields": [
-        "CONTINENT",
-        "SQMI"
+        "OBJECTID",
+        "SQKM"
       ],
       "tablelabels": [
         "Continente",

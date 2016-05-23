@@ -83,11 +83,11 @@
         "placeholderIndex": 1,
         "id": "_5",
         "name": "FeatureLayerHover",
-        "label": "FeatureLayerHover_2",
+        "label": "FeatureLayerHover",
         "version": "1.4",
         "IsController": true,
         "uri": "widgets/FeatureLayerHover/Widget",
-        "config": "configs/FeatureLayerHover/config_FeatureLayerHover_2.json"
+        "config": "configs/FeatureLayerHover/config_FeatureLayerHover.json"
       },
       {
         "position": {
@@ -254,16 +254,6 @@
         "name": "LayerList",
         "label": "Lista de capas",
         "index": 3
-      },
-      {
-        "name": "FeatureLayerHover",
-        "label": "FeatureLayerHover",
-        "version": "1.4",
-        "IsController": true,
-        "uri": "widgets/FeatureLayerHover/Widget",
-        "config": "configs/FeatureLayerHover/config_FeatureLayerHover.json",
-        "index": 5,
-        "id": "widgets_FeatureLayerHover_Widget_18"
       }
     ],
     "groups": []
