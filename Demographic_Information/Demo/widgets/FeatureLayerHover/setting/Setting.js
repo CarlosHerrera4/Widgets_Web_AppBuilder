@@ -81,7 +81,7 @@ function(declare, _WidgetsInTemplateMixin, BaseWidgetSetting, request,domConstru
         
            document.getElementById("showField").style = "block";
            document.getElementById("addfield").style = "block";
-           //document.getElementById("myInput").style = "placeHolder:Etiqueta a mostrar";
+           document.getElementById("myInput").placeholder = "Etiqueta a mostrar";
        },
    
       

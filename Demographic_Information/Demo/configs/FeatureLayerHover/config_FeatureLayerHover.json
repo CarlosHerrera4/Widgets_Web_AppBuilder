@@ -2,15 +2,15 @@
   "widgetName": "FeatureLayerHover",
   "inPanelVar": {
     "params": {
-      "app_id": "http://sampleserver6.arcgisonline.com/arcgis/rest/services/SampleWorldCities/MapServer/1",
+      "app_id": "http://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer/2",
       "count": 2,
       "tablefields": [
-        "OBJECTID",
-        "SQKM"
+        "state_name",
+        "pop2000"
       ],
       "tablelabels": [
-        "Continente",
-        "Km2"
+        "Nombre del estado",
+        "Población"
       ]
     }
   }

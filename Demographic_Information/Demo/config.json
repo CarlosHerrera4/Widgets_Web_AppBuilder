@@ -82,11 +82,11 @@
         },
         "placeholderIndex": 1,
         "id": "_5",
-        "name": "FeatureLayerHover",
         "label": "FeatureLayerHover",
         "version": "1.4",
         "IsController": true,
         "uri": "widgets/FeatureLayerHover/Widget",
+        "name": "FeatureLayerHover",
         "config": "configs/FeatureLayerHover/config_FeatureLayerHover.json"
       },
       {
