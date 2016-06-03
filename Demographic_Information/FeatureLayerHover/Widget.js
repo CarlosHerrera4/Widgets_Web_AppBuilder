@@ -10,6 +10,7 @@ define(['dojo/_base/declare', 'jimu/BaseWidget', 'esri/layers/FeatureLayer', 'es
       // Custom widget code goes here
 
       baseClass: 'jimu-widget-customwidget',
+      southCarolinaCounties: null,
 
       postCreate: function() {
          this.inherited(arguments);
@@ -26,7 +27,8 @@ define(['dojo/_base/declare', 'jimu/BaseWidget', 'esri/layers/FeatureLayer', 'es
          var urlService = this.config.inPanelVar.params.app_id;
          var contador = this.config.inPanelVar.params.count;
         
-         var southCarolinaCounties = new FeatureLayer(urlService, {
+         //var southCarolinaCounties = new FeatureLayer(urlService, {
+         this.southCarolinaCounties = new FeatureLayer(urlService, {
           mode: FeatureLayer.MODE_SNAPSHOT,
           outFields: ["*"]
          });
@@ -40,8 +42,8 @@ define(['dojo/_base/declare', 'jimu/BaseWidget', 'esri/layers/FeatureLayer', 'es
           ),
           new Color([125,125,125,0.35])
          );
-         southCarolinaCounties.setRenderer(new SimpleRenderer(symbol));
-         this.map.addLayer(southCarolinaCounties);
+         this.southCarolinaCounties.setRenderer(new SimpleRenderer(symbol));
+         this.map.addLayer(this.southCarolinaCounties);
 
          this.map.infoWindow.resize(245,125);
 
@@ -76,7 +78,7 @@ define(['dojo/_base/declare', 'jimu/BaseWidget', 'esri/layers/FeatureLayer', 'es
                var t = t + "<b>"+tablabels[i]+"</b>:  ${"+tabfields[i]+"}<br>";
            };
            
-           southCarolinaCounties.on("mouse-over", function(evt){
+           this.southCarolinaCounties.on("mouse-over", function(evt){
               var content = esriLang.substitute(evt.graphic.attributes,t);
               var highlightGraphic = new Graphic(evt.graphic.geometry,highlightSymbol);
               //this.graphics.add(highlightGraphic);
@@ -104,9 +106,11 @@ define(['dojo/_base/declare', 'jimu/BaseWidget', 'esri/layers/FeatureLayer', 'es
                  
        },
 
-      // onClose: function(){
+      onClose: function(){
+            this.map.removeLayer(this.southCarolinaCounties);
+          dijitPopup.close(dialog);
       //   console.log('onClose');
-      // },
+      },
 
       // onMinimize: function(){
       //   console.log('onMinimize');
