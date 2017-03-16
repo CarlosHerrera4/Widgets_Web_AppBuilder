@@ -1,0 +1,202 @@
+{
+  "aoiTabText": "AOI",
+  "reportTabText": "Report",
+  "placenameButtonText": "Placename",
+  "drawToolsButtonText": "Draw",
+  "shapefileButtonText": "Shapefile",
+  "coordinatesButtonText": "Coordinates",
+  "showPlacenameWidget": true,
+  "showDrawToolsWidget": true,
+  "showShapefileWidget": true,
+  "showCoordinatesWidget": true,
+  "allowShapefilesUpload": false,
+  "areaUnits": "Standard",
+  "maxFeaturesForAnalysis": 1000,
+  "traverseUnit": "uSSurveyFeet",
+  "traverseDirectionUnit": "decimalDegree",
+  "defaultBufferDistance": 0,
+  "defaultBufferUnit": "UNIT_STATUTE_MILE",
+  "maxBufferDistance": 100,
+  "searchSourceSettings": {
+    "allPlaceholder": "",
+    "showInfoWindowOnSelect": true,
+    "sources": []
+  },
+  "placenameSymbology": {
+    "point": {
+      "contentType": "image/png",
+      "height": 25,
+      "size": 16,
+      "type": "esriPMS",
+      "url": "https://static.arcgis.com/images/Symbols/Shapes/BluePin1LargeB.png",
+      "width": 25,
+      "xoffset": 0,
+      "yoffset": 0
+    },
+    "polyline": {
+      "color": [
+        255,
+        0,
+        0,
+        255
+      ],
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "width": 1
+    },
+    "polygon": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+        136,
+        136,
+        136,
+        63
+      ],
+      "outline": {
+        "type": "esriSLS",
+        "style": "esriSLSSolid",
+        "color": [
+          112,
+          112,
+          112,
+          255
+        ],
+        "width": 1
+      }
+    }
+  },
+  "drawToolSymbology": {
+    "point": {
+      "contentType": "image/png",
+      "height": 25,
+      "size": 16,
+      "type": "esriPMS",
+      "url": "https://static.arcgis.com/images/Symbols/Shapes/BluePin1LargeB.png",
+      "width": 25,
+      "xoffset": 0,
+      "yoffset": 0
+    },
+    "polyline": {
+      "color": [
+        255,
+        0,
+        0,
+        255
+      ],
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "width": 1
+    },
+    "polygon": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+        136,
+        136,
+        136,
+        63
+      ],
+      "outline": {
+        "type": "esriSLS",
+        "style": "esriSLSSolid",
+        "color": [
+          112,
+          112,
+          112,
+          255
+        ],
+        "width": 1
+      }
+    }
+  },
+  "shapefileSymbology": {
+    "point": {
+      "contentType": "image/png",
+      "height": 25,
+      "size": 16,
+      "type": "esriPMS",
+      "url": "https://static.arcgis.com/images/Symbols/Shapes/BluePin1LargeB.png",
+      "width": 25,
+      "xoffset": 0,
+      "yoffset": 0
+    },
+    "polyline": {
+      "color": [
+        255,
+        0,
+        0,
+        255
+      ],
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "width": 1
+    },
+    "polygon": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+        136,
+        136,
+        136,
+        63
+      ],
+      "outline": {
+        "type": "esriSLS",
+        "style": "esriSLSSolid",
+        "color": [
+          112,
+          112,
+          112,
+          255
+        ],
+        "width": 1
+      }
+    }
+  },
+  "coordinatesSymbology": {
+    "point": {
+      "contentType": "image/png",
+      "height": 25,
+      "size": 16,
+      "type": "esriPMS",
+      "url": "https://static.arcgis.com/images/Symbols/Shapes/BluePin1LargeB.png",
+      "width": 25,
+      "xoffset": 0,
+      "yoffset": 0
+    },
+    "polyline": {
+      "color": [
+        255,
+        0,
+        0,
+        255
+      ],
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "width": 1
+    }
+  },
+  "aoiSymbol": {
+    "type": "esriSFS",
+    "style": "esriSFSSolid",
+    "color": [
+      255,
+      0,
+      0,
+      63
+    ],
+    "outline": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [
+        255,
+        0,
+        0,
+        192
+      ],
+      "width": 1
+    }
+  },
+  "layers": []
+}

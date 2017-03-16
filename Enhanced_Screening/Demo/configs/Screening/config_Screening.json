@@ -1,0 +1,371 @@
+{
+  "aoiTabText": "AOI",
+  "reportTabText": "Report",
+  "placenameButtonText": "Placename",
+  "drawToolsButtonText": "Draw",
+  "shapefileButtonText": "Shapefile",
+  "coordinatesButtonText": "Coordinates",
+  "showPlacenameWidget": true,
+  "showDrawToolsWidget": true,
+  "showShapefileWidget": true,
+  "showCoordinatesWidget": true,
+  "allowShapefilesUpload": false,
+  "areaUnits": "Standard",
+  "maxFeaturesForAnalysis": 1000,
+  "traverseUnit": "uSSurveyFeet",
+  "traverseDirectionUnit": "decimalDegree",
+  "defaultBufferDistance": 0,
+  "defaultBufferUnit": "UNIT_STATUTE_MILE",
+  "maxBufferDistance": 100,
+  "searchSourceSettings": {
+    "allPlaceholder": "",
+    "showInfoWindowOnSelect": true,
+    "sources": [
+      {
+        "url": "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+        "name": "Esri World Geocoder",
+        "singleLineFieldName": "SingleLine",
+        "placeholder": "Esri World Geocoder",
+        "countryCode": "",
+        "zoomScale": 50000,
+        "maxSuggestions": 6,
+        "maxResults": 6,
+        "searchInCurrentMapExtent": false,
+        "enableLocalSearch": true,
+        "localSearchMinScale": 300000,
+        "localSearchDistance": 50000,
+        "type": "locator"
+      }
+    ]
+  },
+  "placenameSymbology": {
+    "point": {
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0,
+      "type": "esriPMS",
+      "url": "https://static.arcgis.com/images/Symbols/Shapes/BluePin1LargeB.png",
+      "contentType": "image/png",
+      "width": 24.999999999999996,
+      "height": 24.999999999999996
+    },
+    "polyline": {
+      "color": [
+        255,
+        0,
+        0,
+        255
+      ],
+      "width": 1,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    },
+    "polygon": {
+      "color": [
+        136,
+        136,
+        136,
+        63
+      ],
+      "outline": {
+        "color": [
+          112,
+          112,
+          112,
+          255
+        ],
+        "width": 1,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    },
+    "aoiSymbol": {
+      "color": [
+        255,
+        0,
+        0,
+        63
+      ],
+      "outline": {
+        "color": [
+          255,
+          0,
+          0,
+          192
+        ],
+        "width": 1,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "drawToolSymbology": {
+    "point": {
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0,
+      "type": "esriPMS",
+      "url": "https://static.arcgis.com/images/Symbols/Shapes/BluePin1LargeB.png",
+      "contentType": "image/png",
+      "width": 24.999999999999996,
+      "height": 24.999999999999996
+    },
+    "polyline": {
+      "color": [
+        255,
+        0,
+        0,
+        255
+      ],
+      "width": 1,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    },
+    "polygon": {
+      "color": [
+        136,
+        136,
+        136,
+        63
+      ],
+      "outline": {
+        "color": [
+          112,
+          112,
+          112,
+          255
+        ],
+        "width": 1,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    },
+    "aoiSymbol": {
+      "color": [
+        255,
+        0,
+        0,
+        63
+      ],
+      "outline": {
+        "color": [
+          255,
+          0,
+          0,
+          192
+        ],
+        "width": 1,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "shapefileSymbology": {
+    "point": {
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0,
+      "type": "esriPMS",
+      "url": "https://static.arcgis.com/images/Symbols/Shapes/BluePin1LargeB.png",
+      "contentType": "image/png",
+      "width": 24.999999999999996,
+      "height": 24.999999999999996
+    },
+    "polyline": {
+      "color": [
+        255,
+        0,
+        0,
+        255
+      ],
+      "width": 1,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    },
+    "polygon": {
+      "color": [
+        136,
+        136,
+        136,
+        63
+      ],
+      "outline": {
+        "color": [
+          112,
+          112,
+          112,
+          255
+        ],
+        "width": 1,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    },
+    "aoiSymbol": {
+      "color": [
+        255,
+        0,
+        0,
+        63
+      ],
+      "outline": {
+        "color": [
+          255,
+          0,
+          0,
+          192
+        ],
+        "width": 1,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "coordinatesSymbology": {
+    "point": {
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0,
+      "type": "esriPMS",
+      "url": "https://static.arcgis.com/images/Symbols/Shapes/BluePin1LargeB.png",
+      "contentType": "image/png",
+      "width": 24.999999999999996,
+      "height": 24.999999999999996
+    },
+    "polyline": {
+      "color": [
+        255,
+        0,
+        0,
+        255
+      ],
+      "width": 1,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    },
+    "polygon": {
+      "color": [
+        136,
+        136,
+        136,
+        63
+      ],
+      "outline": {
+        "color": [
+          112,
+          112,
+          112,
+          255
+        ],
+        "width": 1,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    },
+    "aoiSymbol": {
+      "color": [
+        255,
+        0,
+        0,
+        63
+      ],
+      "outline": {
+        "color": [
+          255,
+          0,
+          0,
+          192
+        ],
+        "width": 1,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "aoiSymbol": {
+    "color": [
+      255,
+      0,
+      0,
+      63
+    ],
+    "outline": {
+      "color": [
+        255,
+        0,
+        0,
+        192
+      ],
+      "width": 1,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    },
+    "type": "esriSFS",
+    "style": "esriSFSSolid"
+  },
+  "layers": [
+    {
+      "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/arcgis/rest/services/Incidentes_Madrid/FeatureServer/1",
+      "geometryType": "esriGeometryPoint",
+      "id": "Incidentes_Madrid_8573",
+      "label": "",
+      "layerName": "Incidentes_Madrid - Hurto_2013_mini",
+      "layerId": "1",
+      "baseURL": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/arcgis/rest/services/Incidentes_Madrid/FeatureServer/",
+      "selectedFields": {
+        "FECHA": {
+          "name": "FECHA",
+          "type": "esriFieldTypeDate",
+          "alias": "FECHA",
+          "length": 8,
+          "editable": true,
+          "nullable": true,
+          "label": "asdf"
+        }
+      }
+    }
+  ],
+  "downloadSettings": {
+    "type": "syncEnable",
+    "layers": [
+      {
+        "url": "http://services6.arcgis.com/ISJgswKTd7DKhcLN/arcgis/rest/services/Incidentes_Madrid/FeatureServer/1",
+        "layerName": "Incidentes_Madrid - Hurto_2013_mini",
+        "id": "Incidentes_Madrid_8573",
+        "allowDownload": true,
+        "downloadingFileOption": [
+          "csv",
+          "filegdb",
+          "shapefile"
+        ]
+      }
+    ],
+    "extractDataTaskURL": "",
+    "downloadingFileOptions": [
+      "csv",
+      "filegdb",
+      "shapefile"
+    ]
+  },
+  "reportSettings": {
+    "printTaskURL": "http://utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+    "footnote": "",
+    "logo": "${appPath}/widgets/Screening/images/defaultLogo.png"
+  }
+}
