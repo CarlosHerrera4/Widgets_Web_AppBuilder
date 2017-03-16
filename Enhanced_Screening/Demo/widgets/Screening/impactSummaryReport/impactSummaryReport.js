@@ -191,19 +191,23 @@ define([
 
                 // Muestro mis datos
                 debugger
-                var aea = dom.byId(informe);
-                aea.innerHTML = "<p>El número de puntos que están dentro del buffer es: " + muestra_datos[0].n_entidades + "</p>";
+                this.muestramisdatos();
               }));
           }
         }));
 
       return deferred.promise;
 
+    },
 
-      // document.getElementById("informe").innerHTML = "<p>El número de puntos que están dentro del buffer es: " + muestra_datos[0].n_entidades + "</p>";
-
-
-
+    /* Función muestra mis datos
+    */
+    muestramisdatos: function() {
+      n_datos  = muestra_datos.length;
+      var aea = dom.byId(informe);
+      for (i=0; i<=n_datos; n++) {
+         aea.innerHTML = "<p>El número de puntos que están dentro del buffer es: " + muestra_datos[i].n_entidades + "</p><br>";
+      }
     },
 
     /**
