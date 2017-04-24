@@ -26,7 +26,7 @@ define(['dojo/_base/declare', 'jimu/BaseWidget', 'esri/layers/FeatureLayer', 'es
          console.log('onOpen');
          var urlService = this.config.inPanelVar.params.app_id;
          var contador = this.config.inPanelVar.params.count;
-        
+
          //var southCarolinaCounties = new FeatureLayer(urlService, {
          this.southCarolinaCounties = new FeatureLayer(urlService, {
           mode: FeatureLayer.MODE_SNAPSHOT,
@@ -48,7 +48,7 @@ define(['dojo/_base/declare', 'jimu/BaseWidget', 'esri/layers/FeatureLayer', 'es
          this.map.infoWindow.resize(245,125);
 
          dialog = new TooltipDialog({
-          id: "tooltipDialog",
+          id: "tooltipDialog" + Math.random(),
           style: "position: absolute; width: 250px; font: normal normal normal 10pt Helvetica;z-index:100"
          });
          dialog.startup();
@@ -63,21 +63,21 @@ define(['dojo/_base/declare', 'jimu/BaseWidget', 'esri/layers/FeatureLayer', 'es
          );
 
         //close the dialog when the mouse leaves the highlight graphic
-        
+
           this.map.graphics.enableMouseEvents();
           this.map.graphics.on("mouse-out", closeDialog);
 
         //listen for when the onMouseOver event fires on the countiesGraphicsLayer
         //when fired, create a new graphic with the geometry from the event.graphic and add it to the maps graphics layer
-           
+
            var tabfields = this.config.inPanelVar.params.tablefields;
            var tablabels = this.config.inPanelVar.params.tablelabels;
-           
+
            var t = "<b>"+tablabels[0]+"</b>:  ${"+tabfields[0]+"}<br>";
            for (i=1; i < tabfields.length; i++) {
                var t = t + "<b>"+tablabels[i]+"</b>:  ${"+tabfields[i]+"}<br>";
            };
-           
+
            this.southCarolinaCounties.on("mouse-over", function(evt){
               var content = esriLang.substitute(evt.graphic.attributes,t);
               var highlightGraphic = new Graphic(evt.graphic.geometry,highlightSymbol);
@@ -95,15 +95,15 @@ define(['dojo/_base/declare', 'jimu/BaseWidget', 'esri/layers/FeatureLayer', 'es
               var queryTask = new QueryTask(urlService);
               var query = new Query();
               query.returnGeometry = false;
-              query.outFields = ["*"];    
+              query.outFields = ["*"];
           });
-        
+
 
         function closeDialog() {
           map.graphics.clear();
           dijitPopup.close(dialog);
         }
-                 
+
        },
 
       onClose: function(){
